@@ -109,13 +109,12 @@ public class MainActivity extends AppCompatActivity {
             }
             String[] classes = {"Cellphone_Usage", "Drinking", "Eyes_Off_Road", "Hand_On_Face", "One_Hand_On_Wheel", "Safe_Driving", "Turned_Away"};
             String output = "";
-            /*
+
             if(!classes[maxPos].equals("Safe_Driving") ){
                 output = "Safe Driving";
-            }else{
+            }else {
                 output = "Distracted Driving";
             }
-             */
             result.setText(classes[maxPos]);
 
 
