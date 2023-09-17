@@ -8,6 +8,9 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.service.controls.templates.ThumbnailTemplate;
@@ -111,9 +114,38 @@ public class MainActivity extends AppCompatActivity {
             String output = "";
 
             if(!classes[maxPos].equals("Safe_Driving") ){
-                output = "Safe Driving";
-            }else {
                 output = "Distracted Driving";
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Distracted Driving Incident?")
+                        .setItems(R.array.options_array, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // The 'which' variable contains the index of the selected item.
+                                // You can perform actions based on the selected option.
+                                // For example, you can use a switch statement.
+                                switch (which) {
+                                    case 0:
+                                        showDialog("Report incident", "");
+                                        break;
+                                    case 1:
+                                        showDialog("Waive Incident","");
+                                        break;
+                                    // Add more cases for additional options as needed
+                                }
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // Handle the cancel button click (if needed)
+                                dialog.dismiss();
+                            }
+                        });
+
+// Create and display the AlertDialog
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
+            }else{
+                output = "Safe Driving";
             }
             result.setText(output);
 
@@ -152,4 +184,17 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+    private void showDialog(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
+    }
+
 }
