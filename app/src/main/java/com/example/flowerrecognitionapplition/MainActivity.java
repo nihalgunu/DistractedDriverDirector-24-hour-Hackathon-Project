@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     TextView result;
 
-    int imageSize = 32;
+    int imageSize = 64;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             Model model = Model.newInstance(getApplicationContext());
 
             // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 32, 32, 3}, DataType.FLOAT32);
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 64, 64, 3}, DataType.FLOAT32);
             ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
             byteBuffer.order(ByteOrder.nativeOrder());
 
@@ -107,8 +107,18 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"tulip", "sunflower", "rose", "dandelion", "daisy"};
+            String[] classes = {"Cellphone_Usage", "Drinking", "Eyes_Off_Road", "Hand_On_Face", "One_Hand_On_Wheel", "Safe_Driving", "Turned_Away"};
+            String output = "";
+            /*
+            if(!classes[maxPos].equals("Safe_Driving") ){
+                output = "Safe Driving";
+            }else{
+                output = "Distracted Driving";
+            }
+             */
             result.setText(classes[maxPos]);
+
+
 
             // Releases model resources if no longer used.
             model.close();
@@ -134,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 Bitmap image = null;
                 try {
                     image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), dat);
-                }catch (IOException e){
+                } catch (IOException e){
                     e.printStackTrace();
                 }
                 imageView.setImageBitmap(image);
