@@ -115,9 +115,7 @@ public class MainActivity extends AppCompatActivity {
             }else {
                 output = "Distracted Driving";
             }
-            result.setText(classes[maxPos]);
-
-
+            result.setText(output);
 
             // Releases model resources if no longer used.
             model.close();
