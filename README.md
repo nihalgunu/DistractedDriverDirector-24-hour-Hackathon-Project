@@ -40,6 +40,12 @@ enhancing road safety. Let's make our roads safer together! 🚗💻👮‍♂�
 - Run class 'main'
 - Make sure to set up a virtual or external machine
 
+## Figures
+
+- Figure describing Neural Network
+- Figure describing over workflow
+- Figure describing output flow
+
 ### Prerequisites
 
 - Android Device required
