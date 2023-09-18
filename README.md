@@ -66,19 +66,19 @@ Once the program is run, upload an image through your Android device. If safe dr
 
 ## Contributions
 
-#Nihal Gunukula
+Nihal Gunukula
 - Developed the entire Neural Network through TensorFlow in Google Colab.
 - Established Integration with Andriod Studio adding the functionality to take a photo or pic picture from the gallery -> send it to the neural network -> get a "distracted driver" or "non-distracted driver response".
 
-#Molik Mishra
+Molik Mishra
 - Established the human verification option within the Andriod application through Andriod Studio.
 - Tested our application with his Android phone & downloaded the finished app.
 
-#Ayush Pai
+Ayush Pai
 - Found the database of 1,000 distracted drivers that were utilized within the application.
 - Found out how many people die due to distracted driving. 
 
-#Aathman Bhavaraju
+Aathman Bhavaraju
 - Created the figures representing what our application did through excalidraw.
 - Wrote a majority of the readme file.
 
