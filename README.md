@@ -64,7 +64,7 @@ Once the program is run, upload an image through your Android device. If safe dr
 - The functionality has not been verified with validation data - received a 99.3 percent accuracy on training data.
 - The application is trained with pictures that would be challenging to take in the real world.
 
-## Contributions
+## Contributing
 
 Nihal Gunukula
 - Developed the entire Neural Network through TensorFlow in Google Colab.
