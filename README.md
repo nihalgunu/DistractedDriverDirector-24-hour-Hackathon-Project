@@ -69,7 +69,7 @@ You can contribute to this application by cloning the GitHub, making your respec
 
 
 ## Acknowledgments
-This project was made during Purdue's Hello World 2023 Hackathon by
+This project was made during Purdue's Hello World 2023 Hackathon by:
 
 Nihal Gunukula
 - Developed the entire Neural Network through TensorFlow in Google Colab.
