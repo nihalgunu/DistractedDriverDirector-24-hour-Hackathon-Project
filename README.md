@@ -75,7 +75,7 @@ This project was made during Purdue's Hello World 2023 Hackathon by:
 
 Nihal Gunukula
 - Developed the entire Neural Network through TensorFlow in Google Colab.
-- Established Integration with Andriod Studio adding the functionality to take a photo or pic picture from the gallery -> send it to the neural network -> get a "distracted driver" or "non-distracted driver response".
+- Established Integration with Andriod Studio adding the functionality to take a photo or pick picture from the gallery -> send it to the neural network -> get a "distracted driver" or "non-distracted driver response".
 
 Molik Mishra
 - Established the human verification option within the Andriod application through Andriod Studio.
