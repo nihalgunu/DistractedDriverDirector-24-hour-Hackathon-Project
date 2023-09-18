@@ -48,8 +48,8 @@ enhancing road safety. Let's make our roads safer together! 🚗💻👮‍♂�
 
 ### Prerequisites
 
-- Android Device required
-- Gallery of driving images
+- Android compatible device required
+- Access of drivers images
 
 ### Installation
 
