@@ -67,6 +67,8 @@ Once the program is run, upload an image through your Android device. If safe dr
 ## Contributing
 You can contribute to this application by cloning the GitHub, making your respective changes, and sending a commit request. If you intend to use the neural network for your own application make sure you add nihalgunu (Github), Nihal Gunukula (Full Name) as acknowledgment in your project.
 
+## License
+No License present.
 
 ## Acknowledgments
 This project was made during Purdue's Hello World 2023 Hackathon by:
