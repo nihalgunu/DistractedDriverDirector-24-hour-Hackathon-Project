@@ -65,7 +65,12 @@ Once the program is run, upload an image through your Android device. If safe dr
 - The application is trained with pictures that would be challenging to take in the real world.
 
 ## Contributing
+You can contribute to this application by cloning the GitHub, making your respective changes, and sending a commit request. If you intend to use the neural network for your own application make sure you add nihalgunu (Github), Nihal Gunukula (Full Name) as acknowledgment in your project.
 
+
+## Acknowledgments
+
+This project was made during Purdue's Hello World 2023 Hackathon by:
 Nihal Gunukula
 - Developed the entire Neural Network through TensorFlow in Google Colab.
 - Established Integration with Andriod Studio adding the functionality to take a photo or pic picture from the gallery -> send it to the neural network -> get a "distracted driver" or "non-distracted driver response".
@@ -81,8 +86,4 @@ Ayush Pai
 Aathman Bhavaraju
 - Created the figures representing what our application did through excalidraw.
 - Wrote a majority of the readme file.
-
-## Acknowledgments
-
-This project was made during Purdue's Hello World 2023 Hackathon by Nihal Gunukula, Molik Mishra, Ayush Pai, and Aathman Bhavaraju.
 
